@@ -162,6 +162,12 @@
   }
 }
 
+@media screen and (max-width: 390px) {
+  .form-order__wrapper_width_half {
+    max-width: 165px;
+  }
+}
+
 .form-order__wrapper {
   display: inline-block;
   max-width: 172px;
@@ -178,6 +184,11 @@
 @media screen and (max-width: 400px) {
   .form-order__wrapper:last-of-type {
     margin-left: -4px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .form-order__wrapper {
+    max-width: 165px;
   }
 }
 
