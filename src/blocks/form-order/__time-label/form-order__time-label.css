@@ -1,0 +1,11 @@
+.form-order__time-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+  margin-top: 16px;
+}

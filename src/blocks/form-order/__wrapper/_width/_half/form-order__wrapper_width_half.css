@@ -1,0 +1,7 @@
+@media screen and (max-width: 751px) {
+  .form-order__wrapper_width_half {
+    max-width: 172px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+}

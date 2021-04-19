@@ -1,0 +1,21 @@
+@import url("./_hidden/form-order__wrapper_hidden.css");
+@import url("./_width/_half/form-order__wrapper_width_half.css");
+
+.form-order__wrapper {
+  display: inline-block;
+  max-width: 172px;
+  margin-right: 8px;
+}
+
+.form-order__wrapper:last-of-type {
+  margin-right: 0;
+}
+.form-order__wrapper:nth-of-type(3) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .form-order__wrapper:last-of-type {
+    margin-left: -4px;
+  }
+}

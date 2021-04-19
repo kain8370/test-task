@@ -1,0 +1,15 @@
+@import url("./__group/form-order__group.css");
+@import url("./__title/form-order__title.css");
+@import url("./__title-number/form-order__title-number.css");
+@import url("./__label/form-order__label.css");
+@import url("./__input/form-order__input.css");
+@import url("./__wrapper/form-order__wrapper.css");
+@import url("./__input-checkbox/form-order__input-checkbox.css");
+@import url("./__temp/form-order__temp.css");
+@import url("./__time-label/form-order__time-label.css");
+@import url("./__select-address/form-order__select-address.css");
+@import url("./__comment/form-order__comment.css");
+
+.form-order {
+  max-width: 728px;
+}

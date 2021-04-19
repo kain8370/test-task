@@ -1,0 +1,17 @@
+@import url("./_after-element/_true/form-order__label_after-element_true.css");
+
+.form-order__label {
+  position: relative;
+  display: inline-block;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+  margin: 16px 0 8px;
+}
+
+.form-order__select-address + .form-order__label {
+  margin-top: 16px;
+}

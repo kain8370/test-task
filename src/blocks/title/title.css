@@ -1,0 +1,15 @@
+.title {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 390px) {
+  .title {
+    font-size: 32px;
+  }
+}

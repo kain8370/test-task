@@ -1,0 +1,10 @@
+@import url("./_width/_half/form-order__group_width_half.css");
+
+.form-order__group {
+  border: none;
+  margin-top: 40px;
+}
+
+.form-order__group:first-of-type {
+  margin-top: 0;
+}

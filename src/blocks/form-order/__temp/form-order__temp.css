@@ -1,0 +1,7 @@
+.form-order__temp {
+  display: none;
+}
+
+.form-order__input-checkbox:checked ~ .form-order__temp {
+  display: block;
+}

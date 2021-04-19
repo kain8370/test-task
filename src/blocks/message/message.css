@@ -1,0 +1,23 @@
+.message {
+  width: 356px;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 24px;
+  color: #fff;
+  background-color: #4b4b4f;
+  position: absolute;
+  top: 128px;
+  left: 914px;
+}
+
+@media screen and (max-width: 1282px) {
+  .message {
+    position: static;
+    margin-top: 40px;
+    width: auto;
+    max-width: 728px;
+  }
+}

@@ -1,0 +1,8 @@
+.form-order__comment {
+  display: block;
+  width: 100%;
+  max-width: 728px;
+  height: 80px;
+  color: #cfcfcf;
+  padding: 13px 23px 13px 14px;
+}

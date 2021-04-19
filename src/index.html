@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>" />
+    <title>Доставка</title>
+  </head>
+  <body>
+    <main class="page">
+      <h1 class="title">FTL: Прямая машина</h1>
+      <form class="form-order">
+        <fieldset class="form-order__group">
+          <legend class="form-order__title">
+            <span class="form-order__title-number">1</span>Маршрут
+          </legend>
+          <label class="form-order__label" for="from">Откуда</label>
+          <input type="text" name="from" id="from" class="form-order__input" />
+          <label class="form-order__label" for="to">Куда</label>
+          <input type="text" name="to" id="to" class="form-order__input" />
+        </fieldset>
+        <fieldset class="form-order__group">
+          <legend class="form-order__title">
+            <span class="form-order__title-number">2</span>Транспорт
+          </legend>
+          <div class="form-order__wrapper">
+            <label class="form-order__label" for="capacity">
+              Грузоподъёмность
+            </label>
+            <select
+              id="capacity"
+              name="capacity"
+              class="form-order__input form-order__input_color_gray"
+              onchange="this.style.color='black'"
+            >
+              <option disabled selected hidden>Не выбран</option>
+              <option>select 1</option>
+              <option>select 2</option>
+              <option>select 3</option>
+            </select>
+          </div>
+          <div class="form-order__wrapper">
+            <label class="form-order__label" for="method">
+              Способ погрузки
+            </label>
+            <select id="method" name="method" class="form-order__input">
+              <option>Задняя</option>
+              <option>select 2</option>
+              <option>select 3</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="form-order__group form-order__group_width_half">
+          <legend class="form-order__title">
+            <span class="form-order__title-number">3</span>Груз
+          </legend>
+          <div class="form-order__wrapper_width_half">
+            <label class="form-order__label" for="select-cargo"
+              >Тип груза
+            </label>
+            <select
+              id="select-cargo"
+              name="select-cargo"
+              class="form-order__input form-order__input_color_gray"
+              onchange="this.style.color='black'"
+            >
+              <option disabled selected value="Не выбран" hidden>
+                Не выбран
+              </option>
+              <option value="select 1">select 1</option>
+              <option value="select 2">select 2</option>
+              <option value="select 3">select 3</option>
+            </select>
+          </div>
+          <div class="form-order__wrapper form-order__wrapper_hidden">
+            <label class="form-order__label" for="cargo-class">
+              Класс опасности
+            </label>
+            <select
+              id="cargo-class"
+              name="cargo-class"
+              class="form-order__input"
+            >
+              <option>
+                Класс 5 — Окисляющие вещества и органические перекиси
+              </option>
+              <option>select 2</option>
+              <option>select 3</option>
+            </select>
+          </div>
+          <div class="form-order__wrapper">
+            <label for="cost" class="form-order__label"
+              >Объявленная ценность, ₽</label
+            >
+            <input
+              type="number"
+              id="cost"
+              placeholder="≥ 1"
+              class="form-order__input"
+            />
+          </div>
+          <input
+            type="checkbox"
+            id="show-temp"
+            name="show-temp"
+            class="form-order__input-checkbox"
+            value="fd"
+          />
+          <label
+            for="show-temp"
+            class="form-order__label form-order__label_after-element_true"
+            >Требуется температурный режим</label
+          >
+          <div class="form-order__temp">
+            <div class="form-order__wrapper">
+              <label for="temp-from" class="form-order__label">От, °C</label>
+              <input
+                type="number"
+                name="temp-from"
+                id="temp-from"
+                placeholder="-20"
+                class="form-order__input"
+              />
+            </div>
+            <div class="form-order__wrapper">
+              <label for="temp-to" class="form-order__label">До, °C</label>
+              <input
+                type="number"
+                name="temp-to"
+                id="temp-to"
+                placeholder="+23"
+                class="form-order__input"
+              />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-order__group">
+          <legend class="form-order__title">
+            <span class="form-order__title-number">4</span>Время
+          </legend>
+          <div class="form-order__time-label">
+            <span>Когда прибыть на точку</span><span>700 км в день</span>
+          </div>
+          <div class="form-order__select-address">
+            <span class="form-order__circle"></span><span>Адрес не указан</span
+            ><button type="button">НЕ ВЫБРАНО</button>
+          </div>
+          <div class="form-order__select-address">
+            <span class="form-order__circle"></span><span>Адрес не указан</span
+            ><button type="button" disabled>НЕ ВЫБРАНО</button>
+          </div>
+          <label for="comment" class="form-order__label"
+            >Комментарий к заказу</label
+          >
+          <textarea id="comment" name="comment" class="form-order__comment">
+Укажите особенности въезда на территорию склада или подъезда к адресу</textarea
+          >
+        </fieldset>
+      </form>
+      <div class="message">
+        Для расчета стоимости необходимо ввести параметры груза, пункты отправки
+        и прибытия.
+      </div>
+    </main>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+  </body>
+</html>

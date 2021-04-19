@@ -1,0 +1,35 @@
+.form-order__label_after-element_true::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  box-sizing: border-box;
+  left: -38px;
+  bottom: -5px;
+  background-color: #343539;
+  border: 2px solid white;
+}
+
+.form-order__input-checkbox:checked
+  + .form-order__label_after-element_true::after {
+  background-color: #ef483e;
+  border-color: #ef483e;
+}
+
+.form-order__input-checkbox:checked
+  + .form-order__label_after-element_true::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  box-sizing: border-box;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  margin-right: 60px;
+  position: absolute;
+  top: 4px;
+  left: -29px;
+  z-index: 10;
+  transform: rotate(135deg);
+}

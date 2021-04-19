@@ -1,0 +1,15 @@
+.form-order__title-number {
+  display: inline-block;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: hsl(3, 85%, 59%);
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 8px;
+}

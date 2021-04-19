@@ -1,0 +1,5 @@
+@media screen and (max-width: 750px) {
+  .form-order__wrapper.form-order__wrapper_hidden {
+    display: none;
+  }
+}
