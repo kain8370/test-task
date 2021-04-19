@@ -5,3 +5,9 @@
     margin-right: 5px;
   }
 }
+
+@media screen and (max-width: 390px) {
+  .form-order__wrapper_width_half {
+    max-width: 165px;
+  }
+}
