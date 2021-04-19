@@ -1,3 +1,3 @@
 # Тестовое задание
 
-[demo](kain8370.github.io/test-task)
+[demo](https://kain8370.github.io/test-task/)
